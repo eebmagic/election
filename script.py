@@ -7,7 +7,7 @@ def f(n):
     return '{:,}'.format(n)
 
 # read text file copied from wikipedia
-with open("population.txt") as file:
+with open("sources/population.txt") as file:
     content = file.read().strip()
     lines = content.split("\n")
     pop_cells = [x.split("\t") for x in lines]
@@ -22,7 +22,7 @@ for row in pop_cells:
 
 
 # read the html file for the election results page
-with open("results.html") as file:
+with open("sources/results.html") as file:
     results_content = file.read().strip()
     res_lines = results_content.split('\n')
 
